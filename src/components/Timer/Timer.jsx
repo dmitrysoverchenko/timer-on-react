@@ -1,14 +1,17 @@
 import React from "react";
+import { StyledSpan, StyledTitleWrapper } from "./Styles";
 
 const Timer = ({ time }) => {
   return (
-    <div>
-      <span>{("0" + Math.floor((time / (60 * 60)) % 24)).slice(-2)}</span>
+    <StyledTitleWrapper>
+      <StyledSpan>
+        {("0" + Math.floor((time / (60 * 60)) % 24)).slice(-2)}
+      </StyledSpan>
       &nbsp;:&nbsp;
-      <span>{("0" + (Math.floor(time / 60) % 60)).slice(-2)}</span>
+      <StyledSpan>{("0" + (Math.floor(time / 60) % 60)).slice(-2)}</StyledSpan>
       &nbsp;:&nbsp;
-      <span>{("0" + Math.floor(time % 60)).slice(-2)}</span>
-    </div>
+      <StyledSpan>{("0" + Math.floor(time % 60)).slice(-2)}</StyledSpan>
+    </StyledTitleWrapper>
   );
 };
 

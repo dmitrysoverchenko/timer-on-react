@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { interval, Subject } from "rxjs";
 import { takeUntil } from "rxjs/operators";
-import "./App.css";
 import Timer from "./components/Timer/Timer";
 import BtnGroup from "./components/BtnGroup/BtnGroup";
 
@@ -15,7 +14,7 @@ function App() {
       .pipe(takeUntil(subject))
       .subscribe(() => {
         if (isTimerOn) {
-          setTime((val) => val + 1);
+          setTime((value) => value + 1);
         }
       });
     return () => {
