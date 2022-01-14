@@ -3,7 +3,7 @@ import { Button } from "@mui/material";
 
 const Btn = ({ text, onClick }) => {
   return (
-    <Button type="button" onClick={onClick}>
+    <Button type="button" variant="contained" onClick={onClick}>
       {text}
     </Button>
   );
