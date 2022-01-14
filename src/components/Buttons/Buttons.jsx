@@ -1,15 +1,15 @@
 import React from "react";
-import Button from "../Button/Button";
+import Btn from "../Button/Button";
 
 const Buttons = ({ onStopClick, onStartClick, onResetClick, onWaitClick }) => {
   return (
     <>
-      <Button onClick={onStartClick} text="Start" />
+      <Btn onClick={onStartClick} text="Start" />
 
-      <Button onClick={onStopClick} text="Stop" />
+      <Btn onClick={onStopClick} text="Stop" />
 
-      <Button onClick={onResetClick} text="Reset" />
-      <Button onClick={onWaitClick} text="Wait" />
+      <Btn onClick={onResetClick} text="Reset" />
+      <Btn onClick={onWaitClick} text="Wait" />
     </>
   );
 };

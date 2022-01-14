@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@mui/material";
 
-const Button = ({ text, onClick }) => {
+const Btn = ({ text, onClick }) => {
   return (
     <Button type="button" onClick={onClick}>
       {text}
@@ -9,4 +9,4 @@ const Button = ({ text, onClick }) => {
   );
 };
 
-export default Button;
+export default Btn;
