@@ -67,7 +67,7 @@ function App() {
         onStopClick={onStopClick}
         onStartClick={onStartClick}
         onResetClick={onResetClick}
-        onWaitClick={onWaitClick}
+        onWaitClick={onWaitClick()}
       />
     </>
   );
