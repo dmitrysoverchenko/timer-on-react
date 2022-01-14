@@ -1,7 +1,15 @@
-// import React, { useState, useEffect } from "react";
+import React from "react";
 
-const Timer = () => {
-  return <p>Timer will be there</p>;
+const Timer = ({ time }) => {
+  return (
+    <>
+      <span>{("0" + Math.floor((time / (60 * 60)) % 24)).slice(-2)}</span>
+      &nbsp;:&nbsp;
+      <span>{("0" + (Math.floor(time / 60) % 60)).slice(-2)}</span>
+      &nbsp;:&nbsp;
+      <span>{("0" + Math.floor(time % 60)).slice(-2)}</span>
+    </>
+  );
 };
 
 export default Timer;

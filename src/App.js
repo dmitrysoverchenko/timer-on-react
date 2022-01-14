@@ -1,12 +1,12 @@
 import "./App.css";
+import BtnGroup from "./components/BtnGroup/BtnGroup";
 import Timer from "./components/Timer/Timer";
-import Buttons from "./components/Buttons/Buttons";
 
 function App() {
   return (
     <>
       <Timer />
-      <Buttons />
+      <BtnGroup />
     </>
   );
 }
